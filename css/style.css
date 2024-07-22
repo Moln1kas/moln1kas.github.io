@@ -18,8 +18,12 @@ body {
 	background: #f9f5d7;
 }
 
+h1 {
+	margin: 0; padding: 0;
+}
+
 #top__page {
-	width:  100%;
+	width:  100dvw;
 	height: 480px;
 
 	background: linear-gradient(#689d6a,#b16286);
