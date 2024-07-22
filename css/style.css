@@ -1,0 +1,10 @@
+body {
+	margin:  0;
+	padding: 0;
+}
+
+#top__page {
+	height: 480px;
+
+	background: linear-gradient(#689d6a,#b16286);
+}
