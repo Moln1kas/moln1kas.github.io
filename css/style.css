@@ -1,3 +1,7 @@
+* {
+	font-family: "JetBrains Mono", monospace;
+}
+
 body {
 	margin:  0;
 	padding: 0;
@@ -6,8 +10,6 @@ body {
 	height: 100dvh;
 
 	background: #f9f5d7;
-
-	font-family: "JetBrains Mono", monospace;
 }
 
 #top__page {
