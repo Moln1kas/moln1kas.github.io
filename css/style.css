@@ -6,6 +6,8 @@ body {
 	height: 100dvh;
 
 	background: #f9f5d7;
+
+	font-family: "JetBrains Mono", monospace;
 }
 
 #top__page {
