@@ -18,17 +18,20 @@ body {
 	background: #f9f5d7;
 }
 
+section {
+	width: 100dvw;
+}
+
 h1 {
 	margin: 0; padding: 0;
 }
 
 #top__page {
-	width:  100dvw;
 	height: 480px;
 
 	text-align: center;
 
-	background: linear-gradient(#98971a,#d65d0e, 45deg);
+	background: linear-gradient(45deg, #98971a, #d65d0e);
 	color: #f9f5d7;
 }
 
