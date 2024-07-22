@@ -2,10 +2,14 @@ body {
 	margin:  0;
 	padding: 0;
 
+	width:  100dvw;
+	height: 100dvh;
+
 	background: #f9f5d7;
 }
 
 #top__page {
+	width:  100%;
 	height: 480px;
 
 	background: linear-gradient(#689d6a,#b16286);
