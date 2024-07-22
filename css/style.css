@@ -1,5 +1,11 @@
-* {
-	font-family: "JetBrains Mono", monospace;
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 800
+
+.jetbrains-mono-<uniquifier> {
+ 	font-family: "JetBrains Mono", monospace;
+ 	font-optical-sizing: auto;
+ 	font-weight: <weight>;
+ 	font-style: normal;
 }
 
 body {
