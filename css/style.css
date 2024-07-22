@@ -26,5 +26,8 @@ h1 {
 	width:  100dvw;
 	height: 480px;
 
+	text-align: center;
+
 	background: linear-gradient(#98971a,#d65d0e);
+	color: #f9f5d7;
 }
