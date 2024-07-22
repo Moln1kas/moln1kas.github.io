@@ -22,6 +22,14 @@ section {
 	width: 100dvw;
 }
 
+footer {
+	width:  100dvw;
+	height: 480px;
+
+	background: linear-gradient(45deg, #98971a, #d65d0e);
+	color: #f9f5d7;
+}
+
 h1 {
 	margin: 0; padding: 0;
 }
