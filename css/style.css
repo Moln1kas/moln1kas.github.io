@@ -24,7 +24,7 @@ section {
 
 footer {
 	width:  100dvw;
-	height: 480px;
+	min-height: 128px;
 
 	background: linear-gradient(45deg, #98971a, #d65d0e);
 	color: #f9f5d7;
@@ -45,7 +45,9 @@ h1 {
 
 .card {
 	width:  256px;
-	height: 480px;
+	height: 360px;
 
 	background: #ebdbb2;
+
+	border-radius: 16px;
 }
