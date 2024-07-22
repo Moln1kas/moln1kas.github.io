@@ -28,6 +28,13 @@ h1 {
 
 	text-align: center;
 
-	background: linear-gradient(#98971a,#d65d0e);
+	background: linear-gradient(#98971a,#d65d0e, 45deg);
 	color: #f9f5d7;
+}
+
+.card {
+	width:  256px;
+	height: 480px;
+
+	background: #ebdbb2;
 }
