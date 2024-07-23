@@ -15,7 +15,7 @@ body {
 	width:  100dvw;
 	height: 100dvh;
 
-	background: #f9f5d7;
+	background: #282828;
 }
 
 section {
@@ -28,7 +28,7 @@ footer {
 	width:  100dvw;
 	min-height: 128px;
 
-	background: linear-gradient(45deg, #98971a, #d65d0e);
+	background: linear-gradient(-45deg, #427b58, #689d6a);
 	color: #f9f5d7;
 }
 
@@ -41,7 +41,7 @@ h1, h2, h3, h4{
 
 	text-align: center;
 
-	background: linear-gradient(45deg, #98971a, #d65d0e);
+	background: linear-gradient(45deg, #427b58, #689d6a);
 	color: #f9f5d7;
 }
 
@@ -59,7 +59,8 @@ h1, h2, h3, h4{
 
 	padding: 8px;
 
-	background: #ebdbb2;
+	background: #32302f;
+	color: #fbf1c7;
 
 	border-radius: 8px;
 }
