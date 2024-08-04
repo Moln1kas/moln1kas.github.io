@@ -8,6 +8,11 @@ body {
   padding: 0;
 }
 
+a {
+  color: #ffff04;
+  font-weight: bold;
+}
+
 .main {
   width:  calc(100% - 16px);
   margin: 8px auto;
@@ -47,6 +52,10 @@ body {
   background: #000;
   border: 2px solid #047e7e;
   color: #fff;
+}
+
+.info__card__title {
+  color: #ffff04;
 }
 
 .info__card__title,
