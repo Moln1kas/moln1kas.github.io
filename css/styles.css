@@ -71,3 +71,10 @@ a {
 .main__header {
   text-align: center;
 }
+
+.button {
+  border: 0;
+  min-width: 128px;
+  height: 24px;
+  background: #ffff04;
+}
