@@ -78,3 +78,18 @@ a {
   height: 24px;
   background: #ffff04;
 }
+
+@media screen and (max-width: 980px) {
+  .main,
+  .section {
+    border: 2px solid #000;
+  }
+
+  .flex__line {
+    display: block;
+  }
+
+  .info__card {
+    min-height: 500px;
+  }
+}
