@@ -113,8 +113,8 @@ a {
   }
 
   .button {
-    width: 200px;
-    height: 48px;
+    width: 256px;
+    height: 64px;
     font-size: 24px;
   }
 }
