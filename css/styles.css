@@ -38,6 +38,7 @@ a {
 }
 
 .section__info {
+  text-align: justify;
   margin-bottom: 32px;
 }
 
