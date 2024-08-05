@@ -16,7 +16,7 @@ a {
 .main {
   width:  calc(100% - 16px);
   margin: 8px auto;
-  border: 1px solid #000;
+  border: 2px solid #000;
 
 }
 
@@ -30,15 +30,15 @@ a {
   width:  calc(100% - 32px);
   margin: 8px auto;
   padding: 8px;
-  border: 1px solid #000;
+  border: 2px solid #000;
 }
 
 .section__header {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .section__info {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .flex__line {
@@ -61,7 +61,7 @@ a {
 
 .info__card__title,
 .info__card__desc {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .info__card__list {
@@ -92,7 +92,7 @@ a {
   .section {
     width: calc( 100% - 64px );
     margin: 16px auto;
-    border: 2px solid #000;
+    border: 3px solid #000;
   }
 
   .section {
