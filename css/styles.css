@@ -70,10 +70,6 @@ a {
   margin-bottom: 32px;
 }
 
-.info__card__button {
-  
-}
-
 .main__header {
   text-align: center;
 }
@@ -85,6 +81,10 @@ a {
   background: #ffff04;
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.0);
   font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 980px) {
