@@ -21,6 +21,7 @@ a {
 }
 
 .main__footer {
+  text-align: center;
   background: #000;
   color: #fff;
 }
@@ -48,7 +49,7 @@ a {
   width: calc( 100% - 16px );
   margin: 0 auto;
   min-height: 300px;
-  padding: 8px;
+  padding: 12px;
   background: #000;
   border: 2px solid #047e7e;
   color: #fff;
@@ -66,6 +67,11 @@ a {
 .info__card__list {
   list-style-type: none;
   letter-spacing: 2px;
+  margin-bottom: 32px;
+}
+
+.info__card__button {
+  
 }
 
 .main__header {
@@ -77,6 +83,8 @@ a {
   min-width: 128px;
   height: 24px;
   background: #ffff04;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.0);
+  font-weight: bold;
 }
 
 @media screen and (max-width: 980px) {
