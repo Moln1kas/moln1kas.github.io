@@ -88,7 +88,7 @@ a {
   background: #ffff04;
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.0);
   font-weight: bold;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .button:hover {
@@ -118,23 +118,24 @@ a {
 }
 
 @media screen and (max-width: 980px) {
-  .main,
+  .main__header__title {
+    font-size: 28px;
+  }
+
+  .main {
+    width:  calc(100% - 16px);
+    margin: 8px auto;
+    border: 2px solid #000;
+  }
+
   .section {
-    width: calc( 100% - 64px );
-    margin: 16px auto;
-    border: 3px solid #000;
+    width:  calc(100% - 48px);
+    margin: 8px auto;
+    border: 2px solid #000;
   }
 
   .section {
     padding: 16px;
-  }
-
-  .section__header {
-    margin-bottom: 40px;
-  }
-
-  .section__info {
-    font-size: 12px;
   }
 
   .info__card {
@@ -142,42 +143,13 @@ a {
     margin-bottom: 16px;
   }
 
-  .info__card__title,
-  .info__card__desc {
-    margin-bottom: 40px;
-  }
-
-  .info__card__desc {
-    font-size: 12px;
-  }
-
-  .info__card__list {
-    font-size: 12px;
-    margin-bottom: 64px;
-  }
-
   .flex__line {
     display: block;
   }
 
-  .info__card {
-    min-height: 500px;
-  }
-
-  .button {
-    width: 256px;
-    height: 64px;
-    font-size: 28px;
-    box-shadow: 8px 8px 0 #000;
-  }
-
-  .main__footer {
-    font-size: 12px;
-  }
-
   .details__summary,
   .details__summary__info {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .details__summary::marker {
