@@ -69,10 +69,16 @@ a {
   list-style-type: none;
   letter-spacing: 2px;
   margin-bottom: 32px;
+  color: #06ff04;
 }
 
 .main__header {
   text-align: center;
+}
+
+.main__header__title {
+  color: #ffff04;
+  text-shadow: 4px 4px 0 #000;
 }
 
 .button {
@@ -82,6 +88,7 @@ a {
   background: #ffff04;
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.0);
   font-weight: bold;
+  margin-bottom: 24px;
 }
 
 .button:hover {
@@ -100,9 +107,31 @@ a {
     padding: 16px;
   }
 
+  .section__header {
+    margin-bottom: 40px;
+  }
+
+  .section__info {
+    font-size: 12px;
+  }
+
   .info__card {
     border: none;
     margin-bottom: 16px;
+  }
+
+  .info__card__title,
+  .info__card__desc {
+    margin-bottom: 40px;
+  }
+
+  .info__card__desc {
+    font-size: 12px;
+  }
+
+  .info__card__list {
+    font-size: 12px;
+    margin-bottom: 64px;
   }
 
   .flex__line {
@@ -117,5 +146,10 @@ a {
     width: 256px;
     height: 64px;
     font-size: 28px;
+    box-shadow: 8px 8px 0 #000;
+  }
+
+  .main__footer {
+    font-size: 12px;
   }
 }
