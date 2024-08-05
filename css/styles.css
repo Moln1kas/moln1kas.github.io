@@ -91,7 +91,7 @@ a {
   .main,
   .section {
     width: calc( 100% - 64px );
-    margin: 18px auto;
+    margin: 16px auto;
     border: 2px solid #000;
   }
 
@@ -110,5 +110,11 @@ a {
 
   .info__card {
     min-height: 500px;
+  }
+
+  .button {
+    width: 200px;
+    height: 48px;
+    font-size: 24px;
   }
 }
