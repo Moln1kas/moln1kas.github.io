@@ -15,9 +15,26 @@ a {
 
 .main {
   width:  calc(100% - 16px);
-  margin: 8px auto;
+  margin: 16px auto;
   border: 2px solid #000;
 
+}
+
+.main__navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background: #000;
+}
+
+.main__navbar__content__link {
+  margin: 16px;
+  display: inline;  
+}
+
+.main__navbar__content__link a {
+  text-decoration: none;
 }
 
 .main__footer {
@@ -92,7 +109,7 @@ a {
 }
 
 .main__header__quote {
-  width: 360px;
+  width: 50%;
   margin: 0 auto;
 }
 
