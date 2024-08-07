@@ -21,8 +21,11 @@ a {
 }
 
 .main__footer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #000;
+  height: 48px;
   color: #fff;
 }
 
@@ -73,22 +76,42 @@ a {
 }
 
 .main__header {
-  text-align: center;
+  margin-bottom: 32px;
 }
 
 .main__header__title {
+  text-align: center;
   color: #ffff04;
   text-shadow: 4px 4px 0 #000;
+  margin-bottom: 16px;
+}
+
+.main__header__subtitle {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.main__header__quote {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.main__header__quote__content {
+  margin-bottom: 4px;
+}
+
+.main__header__quote__author {
+  text-align: right;
 }
 
 .button {
   border: 0;
   min-width: 128px;
-  height: 24px;
+  height: 32px;
   background: #ffff04;
-  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.0);
+  box-shadow: 8px 8px 0px #000;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin: 0 8px 16px 0;
 }
 
 .button:hover {
