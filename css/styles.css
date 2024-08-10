@@ -26,7 +26,6 @@
 
 body {
   font-family: "JetBrains Mono", monospace;
-  background: var(--cyan-dark);
 }
 
 * {
@@ -39,10 +38,17 @@ a {
   font-weight: bold;
 }
 
+.page__default {
+  background: var(--cyan-dark);
+}
+
+.page__alternative {
+  background: var(--purple-dark);
+}
+
 .main {
   width:  calc(100% - 32px);
   margin: 32px auto;
-  border: 2px solid var(--black-dark);
 }
 
 .main__navbar {
@@ -72,10 +78,10 @@ a {
 }
 
 .section {
-  width:  calc(100% - 46px);
+  width:  calc(100% - 38px);
   margin: 8px auto;
   padding: 16px;
-  border: 2px solid var(--black-dark);
+  border: thick double var(--black-dark);
 }
 
 .section__header {
@@ -118,7 +124,7 @@ a {
 }
 
 .main__header {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .main__header__title {
