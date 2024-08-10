@@ -1,6 +1,6 @@
-let quotes = [
+const quotes = [
 	['"Блин, мне нужна маленькая, тоненькая и плоская отверточка."', 'Moln1kas'],
-	['"Я сначала написал... Дурак онал"', 'MixDev'],
+	['"Я сначала написал... Дурак онал."', 'MixDev'],
 	['"Пракьическм сплю."', 'Moln1kas'],
 	['"@MixDev, проснись. Помоги с камшотом."', 'Moln1kas'],
 	['"Мы закопали Монако в песке!"', 'Omori'],
@@ -12,11 +12,12 @@ let quotes = [
 	['"НЕТ! Я НАЖАЛ НА DON\'T SAVE!!!"', "Moln1kas"],
 	['"Здравствуйте, это вы хотите теов делать?"', 'Аноним'],
 	['"Да!"', 'Shepelius'],
-	['"РАБОТАТЬ ОГРЫЗКИ!"', 'Shepelius'],
-]
+	['"РАБОТАТЬ, ОГРЫЗКИ!"', 'Shepelius'],
+];
 
 $(document).ready(function () {
-	let quote = Math.floor(Math.random() * quotes.length)
+	let quote = Math.floor(Math.random() * quotes.length);
+
 	$(".main__header__quote__content").html(`${quotes[quote][0]}`);
 	$(".main__header__quote__author").html(`${quotes[quote][1]}`);
 });

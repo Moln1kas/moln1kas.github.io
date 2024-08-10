@@ -1,6 +1,32 @@
+:root {
+  --black-dark: #000;
+  --black: #555;
+
+  --red-dark: #AA0000;
+  --red: #FF5555;
+
+  --green-dark: #00AA00;
+  --green: #55FF55;
+
+  --yellow-dark: #AA5500;
+  --yellow: #FFFF55;
+
+  --blue-dark: #0000AA;
+  --blue: #5555FF;
+
+  --purple-dark: #AA00AA;
+  --purple: #FF55FF;
+
+  --cyan-dark: #00AAAA;
+  --cyan: #55FFFF;
+
+  --white-dark: #AAA;
+  --white: #FFF;
+}
+
 body {
   font-family: "JetBrains Mono", monospace;
-  background: #047e7e;
+  background: var(--cyan-dark);
 }
 
 * {
@@ -9,15 +35,14 @@ body {
 }
 
 a {
-  color: #ffff04;
+  color: var(--yellow);
   font-weight: bold;
 }
 
 .main {
   width:  calc(100% - 32px);
   margin: 32px auto;
-  border: 2px solid #000;
-
+  border: 2px solid var(--black-dark);
 }
 
 .main__navbar {
@@ -25,7 +50,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 48px;
-  background: #000;
+  background: var(--black-dark);
 }
 
 .main__navbar__content__link {
@@ -41,16 +66,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background: var(--black-dark);
   height: 48px;
-  color: #fff;
+  color: var(--white);
 }
 
 .section {
   width:  calc(100% - 46px);
   margin: 8px auto;
   padding: 16px;
-  border: 2px solid #000;
+  border: 2px solid var(--black-dark);
 }
 
 .section__header {
@@ -71,13 +96,13 @@ a {
   margin: 0 auto;
   min-height: 300px;
   padding: 12px;
-  background: #000;
-  border: 2px solid #047e7e;
-  color: #fff;
+  background: var(--black-dark);
+  border: 2px solid var(--cyan-dark);
+  color: var(--white);
 }
 
 .info__card__title {
-  color: #ffff04;
+  color: var(--yellow);
 }
 
 .info__card__title,
@@ -89,7 +114,7 @@ a {
   list-style-type: none;
   letter-spacing: 2px;
   margin-bottom: 32px;
-  color: #06ff04;
+  color: var(--yellow);
 }
 
 .main__header {
@@ -98,14 +123,14 @@ a {
 
 .main__header__title {
   text-align: center;
-  color: #ffff04;
+  color: var(--yellow);
   text-shadow: 4px 4px 0 #000;
   margin-bottom: 16px;
 }
 
 .main__header__subtitle {
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 .main__header__quote {
@@ -118,6 +143,7 @@ a {
 }
 
 .main__header__quote__author {
+  margin-bottom: 24px;
   text-align: right;
 }
 
@@ -125,8 +151,8 @@ a {
   border: 0;
   min-width: 128px;
   height: 32px;
-  background: #ffff04;
-  box-shadow: 8px 8px 0px #000;
+  background: var(--yellow);
+  box-shadow: 8px 8px 0px var(--black-dark);
   font-weight: bold;
   margin: 0 8px 16px 0;
 }
@@ -142,19 +168,19 @@ a {
 .details__summary {
   width: calc(100% - 16px);
   padding: 8px;
-  background: #ffff04;
+  background: var(--yellow);
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 8px 8px 0 #000;
+  box-shadow: 8px 8px 0 var(--black-dark);
 }
 
 .details__summary__content {
   width: calc(100% - 16px);
   padding: 8px;
-  background: #000;
-  color: #fff;
+  background: var(--black-dark);
+  color: var(--white);
   font-size: 14px;
-  box-shadow: 8px 8px 0 #ffff04;
+  box-shadow: 8px 8px 0 var(--yellow);
 }
 
 .details__summary__content__p {
@@ -173,13 +199,13 @@ a {
   .main {
     width:  calc(100% - 16px);
     margin: 8px auto;
-    border: 2px solid #000;
+    border: 2px solid var(--black-dark);
   }
 
   .section {
     width:  calc(100% - 48px);
     margin: 8px auto;
-    border: 2px solid #000;
+    border: 2px solid var(--black-dark);
   }
 
   .section {
