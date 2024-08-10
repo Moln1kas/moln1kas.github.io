@@ -209,7 +209,7 @@ a {
 
 .white__button:hover,
 .white__summary:hover {
-  background: var(--yellow);
+  background: var(--green);
 }
 
 @media screen and (max-width: 980px) {

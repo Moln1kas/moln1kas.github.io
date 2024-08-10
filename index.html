@@ -65,7 +65,7 @@
 						<li>Animate</li>
 						<li>Aseprite</li>
 					</ul>
-					<button onclick="window.location='gallery.html'" class="button">Галерея работ</button>
+					<button id="gallery" class="button">Галерея работ</button>
 				</div>
 			</div>
 		</section>
@@ -88,7 +88,7 @@
 						<li>Программист</li>
 						<li>Композитор</li>
 					</ul>
-					<button onclick="alert('Все ссылки потом')" class="button">Itch.io</button>
+					<button id="hwi__button" class="button">Itch.io</button>
 				</div>
 				<div class="info__card">
 					<h3 class="info__card__title">N?w Civ?liz?tion</h3>
@@ -104,7 +104,7 @@
 						<li>Программист</li>
 						<li>Композитор</li>
 					</ul>
-					<button onclick="alert('Когда-нибудь... когда-нибудь...')" class="button">?????</button>
+					<button id="nc__button" class="button">?????</button>
 				</div>
 			</div>
 		</section>
@@ -140,16 +140,16 @@
 				<h2>Социальные сети</h2>
 			</header>
 			<p class="section__info">Найдите меня в одной из этих соц. сетей</p>
-			<button onclick="alert('Потом доделаю')" class="button">Discord</button>
-			<button onclick="alert('Потом доделаю')" class="button white__button">Telegram</button>
-			<button onclick="alert('Потом доделаю')" class="button white__button">GitHub</button>
+			<button id="discord" class="button">Discord</button>
+			<button id="telegram" class="button white__button">Telegram</button>
+			<button id="github" class="button white__button">GitHub</button>
 		</section>
 		<section class="section donate">
 			<header class="section__header">
 				<h2>Поддержите меня</h2>
 			</header>
 			<p class="section__info">Ваша поддержка дает мне больше мотивации развивать свои проекты</p>
-			<button onclick="alert('Потом доделаю')" class="button">Boosty</button>
+			<button id="boosty" class="button">Boosty</button>
 		</section>
 	</main>
 	<footer class="main__footer">
@@ -158,5 +158,29 @@
 
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/quotes.js"></script>
+	<script type="text/javascript">
+		$('#gallery').click(function(){
+			window.open('gallery.html', '_self');
+		});
+		$('#nc__button').click(function(){
+			// TODO: write modal windows
+		});
+		$('#hwi__button').click(function(){
+			window.open('https://imixdev.itch.io/hellwish-inc', '_blank');
+		});
+		$('#discord').click(function(){
+			navigator.clipboard.writeText('molnikas');
+			// TODO: write success message
+		});
+		$('#telegram').click(function(){
+			window.open('https://t.me/Moln1kas', '_blank');
+		});
+		$('#github').click(function(){
+			window.open('https://github.com/Moln1kas', '_blank');
+		});
+		$('#boosty').click(function(){
+			window.open('https://boosty.to/molnikas', '_blank');
+		});
+	</script>
 </body> 
 </html>
