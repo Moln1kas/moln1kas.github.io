@@ -168,6 +168,15 @@ a {
   cursor: pointer;
 }
 
+.info__card__button {
+  background: var(--white);
+  box-shadow: 4px 4px 0 var(--purple-dark);
+}
+
+.info__card__button:hover {
+  background: var(--yellow);
+}
+
 .details {
   margin-bottom: 16px;
 }
@@ -209,7 +218,7 @@ a {
 
 .white__button:hover,
 .white__summary:hover {
-  background: var(--green);
+  background: var(--purple-dark);
 }
 
 .modal {
@@ -295,6 +304,7 @@ a {
     content: "";
   }
 
+  .main__header__quote,
   .modal {
     width: 85%;
   }

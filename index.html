@@ -39,13 +39,19 @@
 			<div class="flex__line">
 				<div class="info__card">
 					<h3 class="info__card__title">Программирование</h3>
-					<p class="info__card__desc">Данные языки я использую в своих проектах:</p>
+					<p class="info__card__desc">Языки:</p>
 					<ul class="info__card__list">
 						<li>Rust</li>
 						<li>GDscript</li>
 						<li>C#</li>
 					</ul>
-					<p class="info__card__desc">Для фронтенд разработки я использую:</p>
+					<p class="info__card__desc">Геймдев:</p>
+					<ul class="info__card__list">
+						<li>Godot</li>
+						<li>Solar2D</li>
+						<li>MonoGame ( мечтаю )</li>
+					</ul>
+					<p class="info__card__desc">Фронтенд:</p>
 					<ul class="info__card__list">
 						<li>HTML</li>
 						<li>CSS</li>
@@ -54,18 +60,22 @@
 					</ul>
 				</div>
 				<div class="info__card">
-					<h3 class="info__card__title">Рисование</h3>
-					<p class="info__card__desc">Данные программы я исполюзую для своих проектов:</p>
+					<h3 class="info__card__title">Рисование & Дизайн</h3>
+					<p class="info__card__desc">Рисование:</p>
 					<ul class="info__card__list">
 						<li>Photoshop</li>
 						<li>Aseprite</li>
 					</ul>
-					<p class="info__card__desc">Для анимирования я использую:</p>
+					<p class="info__card__desc">Анимирование:</p>
 					<ul class="info__card__list">
 						<li>Animate</li>
 						<li>Aseprite</li>
 					</ul>
-					<button id="gallery" class="button">Галерея работ</button>
+					<p class="info__card__desc">Дизайн:</p>
+					<ul class="info__card__list">
+						<li>Figma</li>
+					</ul>
+					<button id="gallery" class="button info__card__button">Галерея работ</button>
 				</div>
 			</div>
 		</section>
@@ -88,7 +98,7 @@
 						<li>Программист</li>
 						<li>Композитор</li>
 					</ul>
-					<button id="hwi__button" class="button">Itch.io</button>
+					<button id="hwi__button" class="button info__card__button">Itch.io</button>
 				</div>
 				<div class="info__card">
 					<h3 class="info__card__title">N?w Civ?liz?tion</h3>
@@ -104,7 +114,7 @@
 						<li>Программист</li>
 						<li>Композитор</li>
 					</ul>
-					<button id="nc__button" class="button">?????</button>
+					<button id="nc__button" class="button info__card__button">?????</button>
 				</div>
 			</div>
 		</section>
@@ -176,14 +186,14 @@
 			window.open('gallery.html', '_self');
 		});
 		$('#nc__button').click(function(){
-			call_popup('New Civilization', 'Давайте мечтать вместе.');
+			call_popup('New Civilization', 'Аватарка.');
 		});
 		$('#hwi__button').click(function(){
 			window.open('https://imixdev.itch.io/hellwish-inc', '_blank');
 		});
 		$('#discord').click(function(){
 			navigator.clipboard.writeText('molnikas');
-			// TODO: write success message
+			call_popup('Discord', 'Мой никнейм скопирован в ваш буфер обмена.<br>Если этого не произошло, то вот мой никнейм: moln1kas');
 		});
 		$('#telegram').click(function(){
 			window.open('https://t.me/Moln1kas', '_blank');
