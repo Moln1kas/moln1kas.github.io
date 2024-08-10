@@ -151,6 +151,18 @@
 			<p class="section__info">Ваша поддержка дает мне больше мотивации развивать свои проекты</p>
 			<button id="boosty" class="button">Boosty</button>
 		</section>
+
+		<div class="modal">
+			<header class="modal__header">
+				<h3 class="modal__header__title"></h3>
+				<div class="modal__close__container">
+					<button class="modal__close">Закрыть</button>	
+				</div>
+			</header>
+			<div class="modal__content">				
+				<p class="modal__content__p"></p>
+			</div>
+		</div>
 	</main>
 	<footer class="main__footer">
 		<p class="main__footer__content">С &#10084; - Moln1kas</p>
@@ -158,12 +170,13 @@
 
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/quotes.js"></script>
+	<script src="js/popup.js"></script>
 	<script type="text/javascript">
 		$('#gallery').click(function(){
 			window.open('gallery.html', '_self');
 		});
 		$('#nc__button').click(function(){
-			// TODO: write modal windows
+			call_popup('New Civilization', 'Давайте мечтать вместе.');
 		});
 		$('#hwi__button').click(function(){
 			window.open('https://imixdev.itch.io/hellwish-inc', '_blank');
