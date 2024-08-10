@@ -94,8 +94,6 @@ a {
 }
 
 .flex__line {
-  border: thick double var(--black-dark);
-  padding: 6px;
   display: flex;
 }
 
@@ -222,7 +220,6 @@ a {
   .main {
     width:  calc(100% - 16px);
     margin: 8px auto;
-    border: 2px solid var(--black-dark);
   }
 
   .section {
