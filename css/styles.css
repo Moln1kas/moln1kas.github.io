@@ -228,7 +228,6 @@ a {
   .section {
     width:  calc(100% - 48px);
     margin: 8px auto;
-    border: 2px solid var(--black-dark);
   }
 
   .section {
