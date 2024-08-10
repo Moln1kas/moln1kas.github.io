@@ -103,7 +103,6 @@ a {
   min-height: 300px;
   padding: 12px;
   background: var(--black-dark);
-  border: 6px solid var(--cyan-dark);
   color: var(--white);
 }
 
