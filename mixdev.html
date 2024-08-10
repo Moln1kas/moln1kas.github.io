@@ -15,7 +15,18 @@
 <body class="page__alternative">
 	<header class="main__header">
 		<h1 class="main__header__title">MixDev</h1>
-		<h3 class="main__header__subtitle">Еще какая-то приколюха</h3>
+		<h3 class="main__header__subtitle">Калькулятор</h3>
+		<form class="calculator">
+			<input type="number" class="calculator__input" id="first" name="first" value="0">
+			<select name="action" class="calculator__input" id="action">
+				<option value="plus">+</option>
+				<option value="minus">-</option>
+				<option value="multiply">*</option>
+				<option value="split">/</option>
+			</select>
+			<input type="number" class="calculator__input" id="second" name="second" value="0">
+			<p class="calculator__result">= 0</p>
+		</form>
 		<nav class="main__navbar">
 			<ul class="main__navbar__content">
 				<li class="main__navbar__content__link"><a href="index.html">Главная</a></li>
@@ -33,5 +44,6 @@
 	</footer>
 
 	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/calc.js"></script>
 </body> 
 </html>
