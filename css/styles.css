@@ -38,6 +38,11 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  color: var(--yellow-dark);
+  text-decoration: none;
+}
+
 .page__default {
   background: var(--cyan-dark);
 }
@@ -61,11 +66,7 @@ a {
 
 .main__navbar__content__link {
   margin: 16px;
-  display: inline;  
-}
-
-.main__navbar__content__link a {
-  text-decoration: none;
+  display: inline;
 }
 
 .main__footer {
@@ -99,32 +100,46 @@ a {
 
 .info__card {
   width: calc( 100% - 16px );
-  margin: 0 auto;
-  min-height: 300px;
+  margin: 8px auto;
   padding: 12px;
   background: var(--black-dark);
   color: var(--white);
 }
 
 .info__card__title {
+  width: 100%;
   color: var(--yellow);
 }
 
-.info__card__header,
-.info__card__desc {
-  border: thick double var(--black);
-  padding: 8px;
-  margin-bottom: 8px;
+.info__card__header {
+  display: flex;
+}
+
+.info__card__date__container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .info__card__desc__title {
   margin-bottom: 16px;
 }
 
+.info__card__header,
+.info__card__desc {
+  border: thick double var(--black);
+  padding: 8px;
+  margin-bottom: 8px
+}
+
 .info__card__list {
   list-style-type: none;
   letter-spacing: 2px;
-  color: var(--yellow);
+  color: var(--yellow-dark);
+}
+
+.info__card__list li {
+  margin-bottom: 8px;
 }
 
 .main__header {
@@ -162,7 +177,8 @@ a {
   min-width: 128px;
   height: 32px;
   background: var(--yellow);
-  box-shadow: 8px 8px 0px var(--black-dark);
+  color: var(--yellow-dark);
+  box-shadow: 4px 4px 0px var(--black-dark);
   font-weight: bold;
   margin: 0 8px 16px 0;
 }
@@ -174,7 +190,7 @@ a {
 
 .info__card__button {
   margin-top: 32px;
-  box-shadow: 4px 4px 0 var(--black);
+  box-shadow: 4px 4px 0 var(--yellow-dark);
 }
 
 .details {
@@ -185,9 +201,10 @@ a {
   width: calc(100% - 16px);
   padding: 8px;
   background: var(--yellow);
+  color: var(--yellow-dark);
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 8px 8px 0 var(--black-dark);
+  box-shadow: 4px 4px 0 var(--black-dark);
 }
 
 .details__summary:hover {
@@ -218,7 +235,18 @@ a {
 
 .white__button:hover,
 .white__summary:hover {
-  background: var(--purple-dark);
+  background: var(--yellow);
+  color: var(--yellow-dark);
+}
+
+.fullscreen {
+  position: fixed;
+  display: none;
+  width: 100dvw;
+  height: 100dvh;
+  background: var(--black-dark);
+  opacity: .5;
+  z-index: 998;
 }
 
 .modal {
@@ -282,7 +310,14 @@ a {
   outline: none;
   border: none;
   background: var(--black-dark);
-  color: var(--white);
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+.canvas {
+  background: var(--black-dark);
+  width: 256px;
+  height: 256px;
 }
 
 @media screen and (max-width: 980px) {
@@ -302,11 +337,6 @@ a {
 
   .section {
     padding: 16px;
-  }
-
-  .info__card {
-    border: none;
-    margin-bottom: 16px;
   }
 
   .flex__line {
