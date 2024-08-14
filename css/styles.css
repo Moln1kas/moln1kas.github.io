@@ -320,6 +320,23 @@ a:hover {
   height: 256px;
 }
 
+.piano {
+  display: flex;
+}
+
+.piano__button {
+  width: 32px;
+  height: 96px;
+  background: var(--white);
+  color: var(--black-dark);
+  border: 2px solid var(--black-dark);
+  box-shadow: 4px 4px 0px var(--yellow-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none
+}
+
 @media screen and (max-width: 980px) {
   .main__header__title {
     font-size: 28px;

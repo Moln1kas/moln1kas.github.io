@@ -68,6 +68,18 @@
 					<header class="info__card__header">
 						<h3 class="info__card__title">Музыка</h3>
 					</header>
+					<div class="info__card__desc">
+						<h4 class="info__card__desc__title">Пианино</h4>
+						<div class="piano">
+							<div id="q" class="piano__button">Q</div>
+							<div id="w" class="piano__button">W</div>
+							<div id="e" class="piano__button">E</div>
+							<div id="r" class="piano__button">R</div>
+							<div id="t" class="piano__button">T</div>
+							<div id="y" class="piano__button">Y</div>
+						</div>
+					</div>
+					<button id="play" class="button info__card__button">Примеры работ</button>
 				</div>
 			</div>
 		</section>
@@ -91,5 +103,17 @@
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/popup.js"></script>
 	<script src="js/calc.js"></script>
+	<script src="js/piano.js"></script>
+	<script type="text/javascript">
+			$("#play").one('click', function(){
+				let music = new Audio;
+				let target = Math.floor(Math.random() * 2);
+
+				if (target == 0) music.src = 'sound/angular.mp3';
+    			if (target == 1) music.src = 'sound/hellwish.mp3';
+
+    			music.play();
+			});
+	</script>
 </body> 
 </html>
