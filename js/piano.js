@@ -28,6 +28,10 @@ $('#y').mousedown(function(){
     play_note('A4');
 });
 
+$('#u').mousedown(function(){
+    play_note('B4');
+});
+
 $(document).keydown(function(e) {
     if(e.which == 81) {
         play_note('C4');
@@ -46,5 +50,8 @@ $(document).keydown(function(e) {
     }
     if(e.which == 89) {
         play_note('A4');
+    }
+    if(e.which == 85) {
+        play_note('B4');
     }
 });
