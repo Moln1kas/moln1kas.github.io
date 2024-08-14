@@ -11,7 +11,7 @@ function call_popup( title, content ) {
 
 	screen.css('top', 0);
 	screen.css('left', 0);
-	screen.css('display', 'block')
+	screen.fadeIn(500)
 
 	$('.modal__header__title').html( title );
 	$('.modal__content__p').html( content );
@@ -21,6 +21,6 @@ function call_popup( title, content ) {
 		const screen  = $('.fullscreen')
 
 		element.css('display', 'none');
-		screen.css('display', 'none')
+		screen.fadeOut(500)
 	});
 }

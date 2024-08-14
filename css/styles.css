@@ -79,7 +79,7 @@ a:hover {
 }
 
 .section {
-  width:  calc(100% - 38px);
+  width:  calc(100% - 64px);
   margin: 8px auto;
   padding: 16px;
   border: thick double var(--black-dark);
@@ -143,7 +143,7 @@ a:hover {
 }
 
 .main__header {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .main__header__title {
@@ -217,7 +217,7 @@ a:hover {
   background: var(--black-dark);
   color: var(--white);
   font-size: 14px;
-  box-shadow: 8px 8px 0 var(--yellow);
+  box-shadow: 4px 4px 0 var(--yellow);
 }
 
 .details__summary__content__p {
@@ -244,8 +244,8 @@ a:hover {
   display: none;
   width: 100dvw;
   height: 100dvh;
-  background: var(--black-dark);
-  opacity: .5;
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(10px);
   z-index: 998;
 }
 
