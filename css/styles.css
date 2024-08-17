@@ -217,7 +217,7 @@ a:hover {
   background: var(--black-dark);
   color: var(--white);
   font-size: 14px;
-  box-shadow: 4px 4px 0 var(--yellow);
+  box-shadow: 4px 4px 0 var(--yellow-dark);
 }
 
 .details__summary__content__p {
@@ -244,14 +244,13 @@ a:hover {
   display: none;
   width: 100dvw;
   height: 100dvh;
-  background-color: rgb(255 255 255 / 30%);
+  background-color: rgb(0 0 0 / 30%);
   backdrop-filter: blur(10px);
   z-index: 998;
 }
 
 .modal {
   position: fixed;
-  display: none;
   width: 50%;
   background: var(--purple-dark);
   z-index: 999;

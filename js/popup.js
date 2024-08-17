@@ -2,25 +2,35 @@ function call_popup( title, content ) {
 	const h = $(window).height();
 	const w = $(window).width();
 
-	const element = $('.modal');
-	const screen  = $('.fullscreen')
+	let screen = $(`<div class="fullscreen"></div>`);
+	let popup = $(
+		`
+			<div class="modal">
+				<header class="modal__header">
+					<h3 class="modal__header__title">${title}</h3>
+					<div class="modal__close__container">
+						<button class="modal__close">Закрыть</button>	
+					</div>
+				</header>
+				<div class="modal__content">				
+					<p class="modal__content__p">${content}</p>
+				</div>
+			</div>
+		`
+	);
 
-	element.css('top', h/2 - element.height()/2);
-	element.css('left', w/2 - element.width()/2);
-	element.css('display', 'block')
+	$("body").append(screen);
+	$("body").append(popup);
 
 	screen.css('top', 0);
 	screen.css('left', 0);
-	screen.fadeIn(500)
+	screen.fadeIn(500);
 
-	$('.modal__header__title').html( title );
-	$('.modal__content__p').html( content );
+	popup.css('top', h/2 - popup.height()/2);
+	popup.css('left', w/2 - popup.width()/2);
 
 	$('.modal__close').click(function(){
-		const element = $('.modal');
-		const screen  = $('.fullscreen')
-
-		element.css('display', 'none');
+		popup.css('display', 'none');
 		screen.fadeOut(500)
 	});
 }
