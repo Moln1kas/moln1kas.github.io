@@ -4,6 +4,12 @@ $(document).ready(function () {
 
 	$(".main__header__quote__content").html(`${quotes[quote][0]}`);
 	$(".main__header__quote__author").html(`${quotes[quote][1]}`);
+
+	if (quote === 11) {
+		$(".main__header__quote__author").bind("click", function(){
+			load_true();
+		});
+	}
 });
 
 function init() {

@@ -140,9 +140,9 @@
 				</div>
 				<div class="info__card">
 					<header class="info__card__header">
-						<h3 class="info__card__title">N3w C1?1l1za?on</h3>
+						<h3 id="nc__title" class="info__card__title">N3w C1?1l1za?on</h3>
 					</header>
-					<p class="info__card__desc">??????????? ????. ?????? ???? ?????? ?????????...</p>
+					<p id="nc__desc" class="info__card__desc">??????????? ????. ?????? ???? ?????? ?????????...</p>
 					<div class="info__card__desc">
 						<h4 class="info__card__desc__title">Moln1kas</h4>
 						<ul class="info__card__list">
@@ -170,7 +170,7 @@
 				<details class="details">
 					<summary class="details__summary">Что у тебя на аватарке?</summary>
 					<div class="details__summary__content">
-						<p class="details__summary__content__p">Знакомьтесь - жабака! Как понятно из названия, это смесь жабы и собаки. <br> Однажды <b>Кое где</b> я увидел это замечательное животное, после чего сразу открыл Aseprite и перерисовал этот шедевр с добавлением собственных деталей. <br><br> Небольшая эволюция жабак: </p>
+						<p class="details__summary__content__p">Знакомьтесь - жабака! Как понятно из названия, это смесь жабы и собаки. <br> Однажды <b id="avatar__story">Кое где</b> я увидел это замечательное животное, после чего сразу открыл Aseprite и перерисовал этот шедевр с добавлением собственных деталей. <br><br> Небольшая эволюция жабак: </p>
 						<img src="img/old_avatar.png" class="image" alt="старая жабака">
 						<img src="img/new_avatar.png" class="image" alt="новая жабака">
 					</div>
@@ -178,13 +178,13 @@
 				<details class="details">
 					<summary class="details__summary white__summary">Когда ThePIXZ?</summary>
 					<div class="details__summary__content">
-						<p class="details__summary__content__p">Не спрашивайте меня об этом.</p>
+						<p id="pixz__story" class="details__summary__content__p">Не спрашивайте меня об этом.</p>
 					</div>
 				</details>
 				<details class="details">
 					<summary class="details__summary white__summary">New Civilization? Расскажи подробнее.</summary>
 					<div class="details__summary__content">
-						<p class="details__summary__content__p">Что?</p>
+						<p id="nc__story" class="details__summary__content__p">Что?</p>
 					</div>
 				</details>
 			</header>
@@ -219,12 +219,24 @@
 	</footer>
 
 	<script src="js/jquery-3.7.1.min.js"></script>
-	<script src="js/js.cookie.min.js"></script>
+	<script src="js/themes.js"></script>
 	<script src="js/quotes.js"></script>
 	<script src="js/popup.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			call_popup('Moln1kas', 'Добро пожаловать! Пожалуйста, просмотрите мой сайт полностью, здесь вас ждет множество интерактива и интересного контента.');
+			call_popup(
+				'Moln1kas', 
+				'Добро пожаловать! Пожалуйста, просмотрите мой сайт полностью, здесь вас ждет множество интерактива и интересного контента.', 
+				[
+					[
+						'braindamage',
+						'Включить режим brain damage', 
+						`
+							load_braindamage();
+						`
+					]
+				],
+			);
 			$('#gallery').click(function(){
 				window.open('gallery.html', '_self');
 			});

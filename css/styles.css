@@ -45,6 +45,7 @@ a:hover {
 
 .page__default {
   background: var(--cyan-dark);
+  color: var(--black-dark);
 }
 
 .page__alternative {
@@ -263,15 +264,21 @@ a:hover {
   justify-content: flex-end;
 }
 
-.modal__close {
+.modal__button__base {
   border: none;
   background: var(--black-dark);
   color: var(--white);
   font-weight: bold;
-  width: 96px;
+  min-width: 96px;
+  padding: 0 8px;
 }
 
-.modal__close:hover {
+.modal__button {
+  height: 28px;
+  margin: 0 16px 8px 0;
+}
+
+.modal__button__base:hover {
   cursor: pointer;
   background: var(--white);
   color: var(--black-dark);
@@ -292,6 +299,10 @@ a:hover {
   margin: 8px;
   padding: 4px;
   border: thick double var(--black-dark);
+}
+
+.modal__content__p {
+  margin-bottom: 8px;
 }
 
 .calculator {
