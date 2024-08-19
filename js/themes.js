@@ -1,12 +1,25 @@
 function load_braindamage () {
     $('.page__default').css({'background':'var(--black-dark)', 'color':'var(--red-dark)'});
+
+    $('.main__header__title').css('color', 'var(--red)');
+
+    $('a').css('color', 'var(--red)');
+
     $('.main__navbar' ).css('background', 'var(--red-dark)');
+    $('.main__navbar__content__link a').css('color', 'var(--black-dark)');
+
     $('.section').css('border', 'thick double var(--red-dark)');
-    $('.info__card').css({'background':'var(--red-dark)'});
-    $('.info__card__header').css('border', 'thick double var(--black-dark)')
-    $('.info__card__desc').css('border', 'thick double var(--black-dark)')
+
+    $('.info__card').css({'background':'var(--red-dark)', 'color':'var(--black-dark)'});
+    $('.info__card__header').css('border', 'thick double var(--black-dark)');
+    $('.info__card__title').css('color', 'var(--black-dark)');
+    $('.info__card__desc').css('border', 'thick double var(--black-dark)');
     $('.info__card__list').css('color', 'var(--red)');
+
     $('.main__footer').css('background', 'var(--red-dark)');
+
+    $('.modal').css({'background':'var(--red-dark)', 'color':'var(--black-dark)'});
+    $('.modal__button__base').css('color', 'var(--red-dark)');
 }
 
 function load_true() {
